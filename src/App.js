@@ -27,6 +27,9 @@
 
 import CreateItem from "./components/CreateItem";
 
+import NewItems from "./components/NewItems/NewItems";
+// import Create from "./components/Create";
+
 function App() { 
   const items = [
     {
@@ -55,11 +58,14 @@ function App() {
 
   return (
     <div>
+      <NewItems/>
       <h2>Let's get started!</h2>
   
       <CreateItem title={items[0].title} amount={items[0].amount} date={items[0].date} ></CreateItem>     
       <CreateItem title={items[1].title} amount={items[1].amount} date={items[1].date}></CreateItem>     
       <CreateItem title={items[2].title} amount={items[2].amount} date={items[2].date}></CreateItem>     
+
+      {/* <CreateItem items ={Create}></CreateItem> */}
 
 
     </div>
